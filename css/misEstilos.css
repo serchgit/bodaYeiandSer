@@ -17,6 +17,9 @@ body{
 .gris{
 	color: #73777B;
 }
+.naranja{
+	color: #EC994B;
+}
 .cabecera{
 
 }
@@ -88,6 +91,23 @@ h2{
 .titulo-mesa{
 	font-size: 20px;
 }
+.footer{
+	background: #15133C;
+	border-top: 10px solid #73777B;
+	height: 4rem;
+}
+.btn-amazon{
+	background: #000 !important;
+	border:1px solid #EC994B;
+}
+.btn-liver{
+	background: #D0307C !important;
+	border:1px solid #EC994B;
+}
+.carousel-item img{
+	margin: 0 auto;
+}
+
 /* Movil */
 
 @media (max-width:500px){
