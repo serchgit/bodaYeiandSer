@@ -117,7 +117,7 @@ h2{
 	background-position-y:56% ;*/
 	height: 10rem;
 	height: 33vh;
-background-image: url('https://cdn0.matrimonio.com.co/articles/images/7/9/3/3/img_3397/mesa-con-decoracin-blanco-y-negro.jpg');
+background-image: url('../imagen/mesa.jpg');
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
@@ -126,7 +126,7 @@ background-position: 50% 35%;
 .img-regalos{
 	height: 10rem;
 	height: 33vh;
-background-image: url('https://m.media-amazon.com/images/I/61V-Dja9zZL._AC_SL1024_.jpg');
+background-image: url('../imagen/regalos.jpg');
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
