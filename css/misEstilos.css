@@ -83,10 +83,10 @@ h2{
 	border: 5px solid #15133C;
 }
 .direccion{
-	background: #15133C;
+	background: #15133C !important;
 }
 .direccion:hover{
-	background: #EC994B;
+	background: #EC994B !important;
 }
 .titulo-mesa{
 	font-size: 20px;
@@ -107,7 +107,31 @@ h2{
 .carousel-item img{
 	margin: 0 auto;
 }
-
+.novios{
+	margin: 0 auto;
+}
+.img-mesas{
+	/* background-image: url("https://cdn0.matrimonio.com.co/articles/images/7/9/3/3/img_3397/mesa-con-decoracin-blanco-y-negro.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y:56% ;*/
+	height: 10rem;
+	height: 33vh;
+background-image: url('https://cdn0.matrimonio.com.co/articles/images/7/9/3/3/img_3397/mesa-con-decoracin-blanco-y-negro.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 35%;
+}
+.img-regalos{
+	height: 10rem;
+	height: 33vh;
+background-image: url('https://m.media-amazon.com/images/I/61V-Dja9zZL._AC_SL1024_.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 35%;
+}
 /* Movil */
 
 @media (max-width:500px){
@@ -134,5 +158,11 @@ h2{
 	.mapa{
 		width: 350px;
 		height: 200px;
+	}
+	.img-mesas{
+		height: 23vh;
+	}
+	.img-regalos{
+		height: 23vh;
 	}
 }
