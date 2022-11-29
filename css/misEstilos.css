@@ -132,6 +132,30 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: 50% 35%;
 }
+
+/* asignacion */
+.cont-mesas{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.fam{
+	font-size: 25px;
+}
+.cont-fam{
+	border-bottom: 1px solid;
+}
+.cont-fam span{
+	background:#EC994B ;
+}
+.miembros{
+	font-size: 20px;
+}
+.lista-mesa{
+	height: 100%;
+	justify-content: center;
+}
 /* Movil */
 
 @media (max-width:500px){
