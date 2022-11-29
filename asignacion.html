@@ -46,7 +46,8 @@
      
 <div class="cont-mesas container">
   <!-- mesa 1 -->
-  <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+  <div class="card text-white bg-secondary mb-3" style="width: 18rem;" id="mesa1">
+    <div class="pin"></div>
     <div class="card-header"><b class="azul">Mesa 1</b></div>
     <div class="card-body text-center p-3" style="height:13rem;">
       <ul class="list-group list-group-flush lista-mesa">
@@ -70,7 +71,8 @@
   </div>
 
   <!-- mesa 2 -->
-  <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+  <div class="card text-white bg-secondary mb-3" style="width: 18rem;" id="mesa2">
+    <div class="pin"></div>
     <div class="card-header"><b class="azul">Mesa 2</b></div>
     <div class="card-body text-center p-3" style="height:13rem;">
       <ul class="list-group list-group-flush lista-mesa">
@@ -94,7 +96,8 @@
   </div>
 
   <!-- mesa 3 -->
-  <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+  <div class="card text-white bg-secondary mb-3" style="width: 18rem;" id="mesa3">
+    <div class="pin"></div>
     <div class="card-header"><b class="azul">Mesa 3</b></div>
     <div class="card-body text-center p-3" style="height:13rem;">
       <ul class="list-group list-group-flush lista-mesa">
@@ -118,7 +121,8 @@
   </div>
 
   <!-- mesa 4 -->
-  <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+  <div class="card text-white bg-secondary mb-3" style="width: 18rem;" id="mesa4">
+    <div class="pin"></div>
     <div class="card-header"><b class="azul">Mesa 4</b></div>
     <div class="card-body text-center p-3" style="height:13rem;">
       <ul class="list-group list-group-flush lista-mesa">
@@ -155,6 +159,32 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
       console.log('hola');
+
+      function getRandomInt(min,max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+      return Math.floor(Math.random() * (max-min)+min);
+      }
+
+      // let giro = getRandomInt(-10,10);
+
+      // console.log(giro)
+
+      var card = document.getElementsByClassName('card');
+
+      var numCard = card.length
+
+      // console.log(numCard);
+
+      for (var i = 1; i <= numCard; i++) {
+        let giro = getRandomInt(-8,8);
+        console.log(giro)
+        $("#mesa"+i+"").css('transform', 'rotate('+giro+'deg)');
+      }
+
+
+
+
       $(".fam").click(function(event) {
         $(".miembros").remove();
         var fam = $(this).attr('data-fam');
