@@ -134,6 +134,14 @@ background-position: 50% 35%;
 }
 
 /* asignacion */
+.tit-asig{
+	border-top: 20px solid #15133C;
+    text-shadow: 0px 5px 6px #777;
+    border-radius: 70px;
+}
+.cont-mesas .card{
+    box-shadow: 2px 5px 10px #444
+}
 .cont-mesas{
 	display: flex;
 	justify-content: space-around;
